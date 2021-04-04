@@ -1,5 +1,4 @@
 import _ from 'lodash';
-import logo from './logo.svg';
 import './App.css';
 import youtubeApiSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
