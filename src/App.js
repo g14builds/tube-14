@@ -61,12 +61,17 @@ class App extends Component {
             <VideoDetail video={this.state.selectedVideo} />
           </div>
         </div>
-      </div>
-      <div class="text-center text-sm gh-link-area">
+      </div> 
+      <div class="text-center text-sm gh-link-area text-muted">
+        
         <a href="//github.com/g14builds/tube-14">
           <img src={githubLogo} alt="Github logo"
             height="28" width="28" />
         </a>
+        &nbsp; &nbsp; &nbsp; &nbsp; 
+        by <a href="https://g14.pub/">g14</a> 
+        
+        
       </div>
     </div>
     );
