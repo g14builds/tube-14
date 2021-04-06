@@ -1,6 +1,3 @@
-# React Web2 Demo with API Integration
-A  demo made with React, following Stephen Grider's tutorial on Udemy. 
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
