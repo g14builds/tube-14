@@ -6,6 +6,7 @@ import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
 import { Component } from 'react';
 import env from "react-dotenv";
+import githubLogo from "./images/github.png";
 
 
 class App extends Component {
@@ -41,27 +42,31 @@ class App extends Component {
     return (
       <div className="App">
       <header className="App-header">
-        <p> Tube14! </p>
+        <p className="rotate"> Tube 14 </p>
       </header>
     
       
-      <div class="container">
-      <SearchBar 
-        searchTerm={this.state.searchTerm}
-        onSearchUpdate={videoSeach} />
+      <div class="container main-container">
+        <SearchBar 
+          searchTerm={this.state.searchTerm}
+          onSearchUpdate={videoSeach} />
         <div className="row">
           <div className="col-sm-4">
             <VideoList 
               onVideoSelect={selectedVideo => this.setState({selectedVideo})}
-              videos={this.state.videos} />
-            <div className="card card-body">
-              <p>I made this app while learning React, following Stephen Grider's tutorial on Udemy</p>
-            </div>
+              videos={this.state.videos} />        
+            
           </div>
           <div className="col-sm">
             <VideoDetail video={this.state.selectedVideo} />
           </div>
         </div>
+      </div>
+      <div class="text-center text-sm gh-link-area">
+        <a href="//github.com/g14builds/tube-14">
+          <img src={githubLogo} alt="Github logo"
+            height="28" width="28" />
+        </a>
       </div>
     </div>
     );

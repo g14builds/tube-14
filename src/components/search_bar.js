@@ -14,9 +14,13 @@ class SearchBar extends Component {
     render() {
         
         return (
-            <div className="form-group">
-                <label>Search Term:</label>
-                <input 
+            <div className="input-group input-group-lg tube-14-search-bar">
+                <div className="input-group-prepend">
+                    <span className="input-group-text">
+                        Search YouTube:
+                    </span>
+                </div>
+                <input autofocus
                     className="form-control form-control-lg"
                     value={this.state.term}
                     onChange={event => this.onInputChange(event.target.value)} />

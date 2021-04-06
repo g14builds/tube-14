@@ -1,11 +1,5 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -14,14 +8,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  /* min-height: 100vh; */
+
+  height: 125px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(25px + 2vmin);
+  font-family: 'Carter One', cursive;
+  color: purple;
+}
+
+.App-header .rotate {
+  transform: rotate(-6deg);
 }
 
 .App-link {
@@ -37,7 +36,43 @@
   }
 }
 
+.tube-14-search-bar{
+  margin: 20px 0;
+}
+
+.main-container {
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  padding: 10px;
+  border: 5px solid lightslategray;
+}
 
 li {
   list-style: none;
+}
+
+.search-result {
+    cursor: pointer;
+    /* padding: 5px; */
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow:hidden;
+}
+
+.search-result:hover {
+  background-color: lightgrey;
+  color: purple;
+}
+
+.search-result p {
+  padding: 10px;
+}
+
+/* .video-detail {
+
+} */
+
+.gh-link-area{
+  margin-top: 20px;
 }

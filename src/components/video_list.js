@@ -15,9 +15,12 @@ class VideoList extends React.Component {
             );
         });
         return (
-            <ul className="list-group">
-                {videoItems}
-            </ul>
+            <div>
+                <ul className="list-group">
+                    {videoItems}
+                </ul>
+               
+            </div>
         );
     }
    

@@ -16,7 +16,7 @@ class VideoDetail extends React.Component {
                     <iframe className="embed-responsive-item" src={url} title='Video Details'></iframe>
                 </div>
                 <div className="details">
-                    <div>{this.props.video.snippet.title}</div>
+                    <h2>{this.props.video.snippet.title}</h2>
                     <div>{this.props.video.snippet.description}</div>
                 </div>
             </div>
