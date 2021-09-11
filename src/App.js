@@ -64,12 +64,12 @@ class App extends Component {
       </div> 
       <div class="text-center text-sm gh-link-area text-muted">
         
-        <a href="//github.com/g14builds/tube-14">
+        <a href="//github.com/0xSimulant/tube-14">
           <img src={githubLogo} alt="Github logo"
             height="28" width="28" />
         </a>
         &nbsp; &nbsp; &nbsp; &nbsp; 
-        by <a href="https://g14.pub/">g14</a> 
+        by <a href="https://smlnt.io/">Simulant</a> 
         
         
       </div>
